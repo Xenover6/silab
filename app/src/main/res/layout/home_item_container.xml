@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="8dp"
+    android:background="@drawable/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/dummy_barang"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|end"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Barang"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/purple_800"/>
+            <TextView
+                android:id="@+id/tv_goods_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Letak Barang : Ruang 1B"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/textColor2"/>
+            <TextView
+                android:id="@+id/tv_goods_availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tersedia: 5/10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingHorizontal="8dp"
+                android:background="@drawable/available_background"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pinjamWidget"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/btnDecrement"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/ic_remove"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_background_white"
+                    />
+
+                <TextView
+                    android:id="@+id/borrowedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor1"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:text="0"/>
+
+                <ImageView
+                    android:id="@+id/btnIncrement"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/ic_add"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_background_white"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="end|center"
+                android:textSize="10dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_background"
+                android:drawableEnd="@drawable/ic_cart"
+                android:text="Pinjam" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

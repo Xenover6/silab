@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Regular -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/roboto_regular" />
+    <!-- Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/roboto_italic" />
+
+    <!-- Bold -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        android:font="@font/roboto_bold" />
+    <!-- Bold Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="700"
+        android:font="@font/roboto_bold_italic" />
+
+    <!-- Light -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="300"
+        android:font="@font/roboto_light" />
+    <!-- Light Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="300"
+        android:font="@font/roboto_light_italic" />
+
+    <!-- Medium -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="500"
+        android:font="@font/roboto_medium" />
+    <!-- Medium Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="500"
+        android:font="@font/roboto_medium_italic" />
+
+    <!-- Thin -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="100"
+        android:font="@font/roboto_thin" />
+    <!-- Thin Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="100"
+        android:font="@font/roboto_thin_italic" />
+
+    <!-- Black -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="900"
+        android:font="@font/roboto_black" />
+    <!-- Black Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="900"
+        android:font="@font/roboto_black_italic" />
+</font-family>
